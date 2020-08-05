@@ -1,5 +1,12 @@
 {
   "keys": "/Users/suchengyong/Desktop/eggmysql/config/config.default.js",
+  "session": {
+    "key": "/Users/suchengyong/Desktop/eggmysql/config/config.default.js",
+    "maxAge": "/Users/suchengyong/Desktop/eggmysql/config/config.default.js",
+    "httpOnly": "/Users/suchengyong/Desktop/eggmysql/config/config.default.js",
+    "encrypt": "/Users/suchengyong/Desktop/eggmysql/config/config.default.js",
+    "renew": "/Users/suchengyong/Desktop/eggmysql/config/config.default.js"
+  },
   "middleware": "/Users/suchengyong/Desktop/eggmysql/config/config.default.js",
   "auth": {
     "authUrls": "/Users/suchengyong/Desktop/eggmysql/config/config.default.js"
@@ -86,12 +93,6 @@
   "jwtSecret": "/Users/suchengyong/Desktop/eggmysql/config/config.default.js",
   "cors": {
     "credentials": "/Users/suchengyong/Desktop/eggmysql/config/config.default.js"
-  },
-  "session": {
-    "maxAge": "/Users/suchengyong/Desktop/eggmysql/node_modules/egg-session/config/config.default.js",
-    "key": "/Users/suchengyong/Desktop/eggmysql/node_modules/egg-session/config/config.default.js",
-    "httpOnly": "/Users/suchengyong/Desktop/eggmysql/node_modules/egg-session/config/config.default.js",
-    "encrypt": "/Users/suchengyong/Desktop/eggmysql/node_modules/egg-session/config/config.default.js"
   },
   "helper": {
     "shtml": "/Users/suchengyong/Desktop/eggmysql/node_modules/egg-security/config/config.default.js"

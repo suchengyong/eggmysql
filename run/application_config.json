@@ -1,10 +1,11 @@
 {
   "config": {
     "session": {
-      "maxAge": 86400000,
-      "key": "EGG_SESS",
+      "maxAge": 5000,
+      "key": "SESSION_ID",
       "httpOnly": true,
       "encrypt": true,
+      "renew": true,
       "overwrite": true,
       "signed": true,
       "autoCommit": true,
