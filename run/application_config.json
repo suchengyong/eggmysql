@@ -105,6 +105,7 @@
         "/Users/suchengyong/Desktop/eggmysql/node_modules/egg-static/config/locales",
         "/Users/suchengyong/Desktop/eggmysql/node_modules/egg-view/config/locales",
         "/Users/suchengyong/Desktop/eggmysql/node_modules/egg-mysql/config/locales",
+        "/Users/suchengyong/Desktop/eggmysql/node_modules/egg-view-ejs/config/locales",
         "/Users/suchengyong/Desktop/eggmysql/node_modules/egg/config/locales",
         "/Users/suchengyong/Desktop/eggmysql/config/locales"
       ],
@@ -171,11 +172,15 @@
       "maxFiles": 1000
     },
     "view": {
-      "root": "/Users/suchengyong/Desktop/eggmysql/app/view",
+      "root": [
+        "/Users/suchengyong/Desktop/eggmysql/app/view"
+      ],
       "cache": false,
       "defaultExtension": ".html",
       "defaultViewEngine": "",
-      "mapping": {}
+      "mapping": {
+        ".html": "ejs"
+      }
     },
     "mysql": {
       "default": {
@@ -191,6 +196,14 @@
         "password": "<String len: 6>",
         "database": "egg_mysql"
       }
+    },
+    "ejs": {
+      "root": "/Users/suchengyong/Desktop/eggmysql/app/view",
+      "cache": false,
+      "debug": false,
+      "compileDebug": true,
+      "delimiter": null,
+      "strict": false
     },
     "env": "local",
     "name": "eggmysql",
@@ -214,6 +227,7 @@
         "egg": "^2.15.1",
         "egg-mysql": "^3.0.0",
         "egg-scripts": "^2.11.0",
+        "egg-view-ejs": "^2.0.1",
         "jsonwebtoken": "^8.5.1",
         "md5": "^2.3.0",
         "sha1": "^1.1.1",
@@ -363,6 +377,9 @@
     },
     "authentication": {},
     "jwtSecret": "<String len: 21>",
+    "cors": {
+      "credentials": true
+    },
     "coreMiddlewares": "~config~coreMiddleware",
     "appMiddlewares": "~config~middleware",
     "appMiddleware": "~config~middleware",
@@ -536,6 +553,19 @@
       "from": "/Users/suchengyong/Desktop/eggmysql/config/plugin.js",
       "path": "/Users/suchengyong/Desktop/eggmysql/node_modules/egg-mysql",
       "version": "3.0.0"
+    },
+    "ejs": {
+      "enable": true,
+      "package": "egg-view-ejs",
+      "name": "ejs",
+      "dependencies": [
+        "view"
+      ],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/suchengyong/Desktop/eggmysql/config/plugin.js",
+      "path": "/Users/suchengyong/Desktop/eggmysql/node_modules/egg-view-ejs",
+      "version": "2.0.1"
     }
   }
 }

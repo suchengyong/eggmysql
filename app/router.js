@@ -14,6 +14,8 @@ module.exports = app => {
   router.resources('resource','/api/resource',controller.resource);
   router.resources('roleUser','/api/roleUser',controller.roleUser);
   router.resources('roleResource','/api/roleResource',controller.roleResource);
+  // 使用模版引擎
+  router.get('/page/news',controller.news.index);
   // 做分页和条件查询
   router.get('/api/pagination',controller.pagination.index);
   // 设置角色关系
@@ -30,4 +32,5 @@ module.exports = app => {
   // 登录和注册
   router.post('/api/user/signup',controller.user.signup);// 注册
   router.post('/api/user/signin',controller.user.signin);// 登录
+
 };

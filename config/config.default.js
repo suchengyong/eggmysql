@@ -31,6 +31,12 @@ module.exports = appInfo => {
       enable: false,
     },
   };
+  // 配置模版引擎 先安装 npm i egg-view-ejs -S
+  config.view = {
+    mapping:{
+      '.html':'ejs'
+    }
+  }
   // add your user config here
   const userConfig = {
     mysql:{
