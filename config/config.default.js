@@ -25,7 +25,6 @@ module.exports = appInfo => {
     ]
   };
   config.authentication = { };//做中间路由拦截token
-  
   // 框架的安全插件是默认开启的，如果我们想关闭其中一些安全防范，直接设置该项的 enable 属性为 false 即可
   config.security = {
     csrf: {
@@ -43,7 +42,10 @@ module.exports = appInfo => {
         database:'egg_mysql'
       }
     },
-    jwtSecret:'124775767767ryttyyuuy'//加密token 的密钥
+    jwtSecret:'124775767767ryttyyuuy',//加密token 的密钥
+    cors:{
+      credentials:true //配置允许跨越请求
+    }
   };
   return {
     ...config,
