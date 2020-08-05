@@ -75,7 +75,7 @@
     "onerror": {
       "errorPageUrl": "",
       "appErrorFilter": null,
-      "templatePath": "/Users/suchengyong/Desktop/egg/eggmysql/node_modules/egg-onerror/lib/onerror_page.mustache"
+      "templatePath": "/Users/suchengyong/Desktop/eggmysql/node_modules/egg-onerror/lib/onerror_page.mustache"
     },
     "i18n": {
       "defaultLocale": "en_US",
@@ -88,8 +88,8 @@
     "watcher": {
       "type": "development",
       "eventSources": {
-        "default": "/Users/suchengyong/Desktop/egg/eggmysql/node_modules/egg-watcher/lib/event-sources/default",
-        "development": "/Users/suchengyong/Desktop/egg/eggmysql/node_modules/egg-watcher/lib/event-sources/development"
+        "default": "/Users/suchengyong/Desktop/eggmysql/node_modules/egg-watcher/lib/event-sources/default",
+        "development": "/Users/suchengyong/Desktop/eggmysql/node_modules/egg-watcher/lib/event-sources/development"
       }
     },
     "customLogger": {
@@ -135,14 +135,14 @@
     },
     "static": {
       "prefix": "/public/",
-      "dir": "/Users/suchengyong/Desktop/egg/eggmysql/app/public",
+      "dir": "/Users/suchengyong/Desktop/eggmysql/app/public",
       "dynamic": true,
       "preload": false,
       "buffer": false,
       "maxFiles": 1000
     },
     "view": {
-      "root": "/Users/suchengyong/Desktop/egg/eggmysql/app/view",
+      "root": "/Users/suchengyong/Desktop/eggmysql/app/view",
       "cache": false,
       "defaultExtension": ".html",
       "defaultViewEngine": "",
@@ -224,9 +224,9 @@
       "author": "suchengyong",
       "license": "MIT"
     },
-    "baseDir": "/Users/suchengyong/Desktop/egg/eggmysql",
+    "baseDir": "/Users/suchengyong/Desktop/eggmysql",
     "HOME": "/Users/suchengyong",
-    "rundir": "/Users/suchengyong/Desktop/egg/eggmysql/run",
+    "rundir": "/Users/suchengyong/Desktop/eggmysql/run",
     "dump": {
       "ignore": "<Set>"
     },
@@ -258,7 +258,7 @@
       "onerror": "<Function onerror>"
     },
     "logger": {
-      "dir": "/Users/suchengyong/Desktop/egg/eggmysql/logs/eggmysql",
+      "dir": "/Users/suchengyong/Desktop/eggmysql/logs/eggmysql",
       "encoding": "utf8",
       "env": "local",
       "level": "INFO",
@@ -321,14 +321,13 @@
       "responseTimeout": 60000
     },
     "onClientError": null,
-    "middleware": [
-      "auth"
-    ],
+    "middleware": [],
     "auth": {
       "authUrls": [
         "/api/pagination"
       ]
     },
+    "authentication": {},
     "jwtSecret": "<String len: 21>",
     "coreMiddlewares": "~config~coreMiddleware",
     "appMiddlewares": "~config~middleware",
@@ -342,8 +341,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/suchengyong/Desktop/egg/eggmysql/node_modules/egg/config/plugin.js",
-      "path": "/Users/suchengyong/Desktop/egg/eggmysql/node_modules/egg-session",
+      "from": "/Users/suchengyong/Desktop/eggmysql/node_modules/egg/config/plugin.js",
+      "path": "/Users/suchengyong/Desktop/eggmysql/node_modules/egg-session",
       "version": "3.2.0"
     },
     "security": {
@@ -355,8 +354,8 @@
         "session"
       ],
       "env": [],
-      "from": "/Users/suchengyong/Desktop/egg/eggmysql/node_modules/egg/config/plugin.js",
-      "path": "/Users/suchengyong/Desktop/egg/eggmysql/node_modules/egg-security",
+      "from": "/Users/suchengyong/Desktop/eggmysql/node_modules/egg/config/plugin.js",
+      "path": "/Users/suchengyong/Desktop/eggmysql/node_modules/egg-security",
       "version": "2.8.0"
     },
     "jsonp": {
@@ -368,8 +367,8 @@
         "security"
       ],
       "env": [],
-      "from": "/Users/suchengyong/Desktop/egg/eggmysql/node_modules/egg/config/plugin.js",
-      "path": "/Users/suchengyong/Desktop/egg/eggmysql/node_modules/egg-jsonp",
+      "from": "/Users/suchengyong/Desktop/eggmysql/node_modules/egg/config/plugin.js",
+      "path": "/Users/suchengyong/Desktop/eggmysql/node_modules/egg-jsonp",
       "version": "2.0.0"
     },
     "onerror": {
@@ -381,8 +380,8 @@
         "jsonp"
       ],
       "env": [],
-      "from": "/Users/suchengyong/Desktop/egg/eggmysql/node_modules/egg/config/plugin.js",
-      "path": "/Users/suchengyong/Desktop/egg/eggmysql/node_modules/egg-onerror",
+      "from": "/Users/suchengyong/Desktop/eggmysql/node_modules/egg/config/plugin.js",
+      "path": "/Users/suchengyong/Desktop/eggmysql/node_modules/egg-onerror",
       "version": "2.1.0"
     },
     "i18n": {
@@ -392,8 +391,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/suchengyong/Desktop/egg/eggmysql/node_modules/egg/config/plugin.js",
-      "path": "/Users/suchengyong/Desktop/egg/eggmysql/node_modules/egg-i18n",
+      "from": "/Users/suchengyong/Desktop/eggmysql/node_modules/egg/config/plugin.js",
+      "path": "/Users/suchengyong/Desktop/eggmysql/node_modules/egg-i18n",
       "version": "2.1.1"
     },
     "watcher": {
@@ -403,8 +402,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/suchengyong/Desktop/egg/eggmysql/node_modules/egg/config/plugin.js",
-      "path": "/Users/suchengyong/Desktop/egg/eggmysql/node_modules/egg-watcher",
+      "from": "/Users/suchengyong/Desktop/eggmysql/node_modules/egg/config/plugin.js",
+      "path": "/Users/suchengyong/Desktop/eggmysql/node_modules/egg-watcher",
       "version": "3.1.1"
     },
     "schedule": {
@@ -414,8 +413,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/suchengyong/Desktop/egg/eggmysql/node_modules/egg/config/plugin.js",
-      "path": "/Users/suchengyong/Desktop/egg/eggmysql/node_modules/egg-schedule",
+      "from": "/Users/suchengyong/Desktop/eggmysql/node_modules/egg/config/plugin.js",
+      "path": "/Users/suchengyong/Desktop/eggmysql/node_modules/egg-schedule",
       "version": "3.6.4"
     },
     "multipart": {
@@ -427,8 +426,8 @@
         "schedule"
       ],
       "env": [],
-      "from": "/Users/suchengyong/Desktop/egg/eggmysql/node_modules/egg/config/plugin.js",
-      "path": "/Users/suchengyong/Desktop/egg/eggmysql/node_modules/egg-multipart",
+      "from": "/Users/suchengyong/Desktop/eggmysql/node_modules/egg/config/plugin.js",
+      "path": "/Users/suchengyong/Desktop/eggmysql/node_modules/egg-multipart",
       "version": "2.10.3"
     },
     "development": {
@@ -442,8 +441,8 @@
       "env": [
         "local"
       ],
-      "from": "/Users/suchengyong/Desktop/egg/eggmysql/node_modules/egg/config/plugin.js",
-      "path": "/Users/suchengyong/Desktop/egg/eggmysql/node_modules/egg-development",
+      "from": "/Users/suchengyong/Desktop/eggmysql/node_modules/egg/config/plugin.js",
+      "path": "/Users/suchengyong/Desktop/eggmysql/node_modules/egg-development",
       "version": "2.5.0"
     },
     "logrotator": {
@@ -455,8 +454,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/suchengyong/Desktop/egg/eggmysql/node_modules/egg/config/plugin.js",
-      "path": "/Users/suchengyong/Desktop/egg/eggmysql/node_modules/egg-logrotator",
+      "from": "/Users/suchengyong/Desktop/eggmysql/node_modules/egg/config/plugin.js",
+      "path": "/Users/suchengyong/Desktop/eggmysql/node_modules/egg-logrotator",
       "version": "3.1.0"
     },
     "static": {
@@ -466,8 +465,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/suchengyong/Desktop/egg/eggmysql/node_modules/egg/config/plugin.js",
-      "path": "/Users/suchengyong/Desktop/egg/eggmysql/node_modules/egg-static",
+      "from": "/Users/suchengyong/Desktop/eggmysql/node_modules/egg/config/plugin.js",
+      "path": "/Users/suchengyong/Desktop/eggmysql/node_modules/egg-static",
       "version": "2.2.0"
     },
     "view": {
@@ -477,8 +476,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/suchengyong/Desktop/egg/eggmysql/node_modules/egg/config/plugin.js",
-      "path": "/Users/suchengyong/Desktop/egg/eggmysql/node_modules/egg-view",
+      "from": "/Users/suchengyong/Desktop/eggmysql/node_modules/egg/config/plugin.js",
+      "path": "/Users/suchengyong/Desktop/eggmysql/node_modules/egg-view",
       "version": "2.1.2"
     },
     "mysql": {
@@ -488,8 +487,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/suchengyong/Desktop/egg/eggmysql/config/plugin.js",
-      "path": "/Users/suchengyong/Desktop/egg/eggmysql/node_modules/egg-mysql",
+      "from": "/Users/suchengyong/Desktop/eggmysql/config/plugin.js",
+      "path": "/Users/suchengyong/Desktop/eggmysql/node_modules/egg-mysql",
       "version": "3.0.0"
     }
   }
